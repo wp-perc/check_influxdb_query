@@ -4,7 +4,9 @@ import (
 	"fmt"
 	"encoding/json"
 
-	"github.com/influxdata/influxdb/client/v2"
+	_ "github.com/influxdata/influxdb1-client"
+	client "github.com/influxdata/influxdb1-client/v2"
+
 	"github.com/olorin/nagiosplugin"
 	"gopkg.in/alecthomas/kingpin.v2"
 )
